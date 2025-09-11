@@ -10,6 +10,28 @@
   font-weight: 100 200 300 400 500 600 700 800;
   font-style: italic;
 }
+.desktopWrapper {
+  display: flex;
+  flex: auto;
+}
+.mobile-block {
+  display: none;
+}
+@media (max-width: 1279px) {
+  .desktopWrapper {
+    display: none;
+  }
+  .mobile-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    font-size: 1.5rem;
+    background: rgb(252, 252, 252);
+    color: rgb(34, 34, 34);
+  }
+}
+
 html {
   font-family: "Inter", sans-serif;
 }
@@ -22,10 +44,6 @@ body {
   position: relative;
 
   height: 100vh;
-}
-.wrapper {
-  display: flex;
-  flex: auto;
 }
 #popUp {
   display: flex;
