@@ -77,7 +77,7 @@
           <div class="dashboardHeaderText">
             <h1 hidden>CRM Dashboard</h1>
             <h2 class="subheadingText colorWhite">Monthly Pipeline Value</h2>
-            <div class="dashboardHeaderKPI">
+            <div class="dashboardKPI">
               <p class="KPI colorWhite">€ 241.921,34</p>
               <p class="KPIchange colorGreen">+14.7%</p>
             </div>
@@ -90,16 +90,63 @@
         <section class="mainChart" id="chart">
           <div class="divChart">
             <div class="headerChart">
-              <h2>Weekly Performance</h2>
-              <div>
-                <p>New Contacts</p>
+              <div class="headerTextChart">
+                <img
+                  src="public/images/navIcons/dashboardIcon.svg"
+                  role="img"
+                  alt="Compass icon."
+                  class="sideMenuIcon"
+                />
+                <h2 class="subheadingText">Weekly Performance</h2>
               </div>
+              <ul class="bodyTextSmall">
+                <li id="legendContactsChart">New Contacts</li>
+                <li id="legendProjectsChart">New Projects</li>
+              </ul>
             </div>
             <!-- Aqui hay que poner el chart de chartjs!!! ojo! -->
+            <picture class="graphChart">
+              <source
+                srcset="public/images/chart-md.png"
+                media="(max-width: 1480px)"
+              />
+              <source srcset="public/images/chart-xl.png" />
+              <img src="public/images/chart-md.png" />
+            </picture>
           </div>
-          <div>
-            <p>New Contacts</p>
-            <p>New Projects</p>
+          <hr id="lineDivChart" />
+          <div class="sideKPIChart">
+            <div class="sideKPICardChart">
+              <img
+                src="public/images/Icons/user-plus.svg"
+                role="img"
+                alt="More users symbol."
+                class="sideMenuIcon"
+              />
+              <div class="sideKPITextChart">
+                <p>New Contacts</p>
+                <div class="dashboardKPI">
+                  <p class="KPI colorBlack">54</p>
+                  <p class="KPIchange colorGreen">+40.1%</p>
+                </div>
+              </div>
+            </div>
+            <hr id="lineDivKPIChart" />
+            <div class="sideKPICardChart">
+              <img
+                src="public/images/Icons/trending-up.svg"
+                role="img"
+                alt="Trending up arrow."
+                class="sideMenuIcon"
+              />
+              <div class="sideKPITextChart">
+                <p>New Projects</p>
+                <div class="dashboardKPI">
+                  <p class="KPI colorBlack">12</p>
+                  <p class="KPIchange colorGreen">+9.7%</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section id="kpis">
