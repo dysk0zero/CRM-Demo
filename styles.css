@@ -1,0 +1,173 @@
+.body {
+  background-color: rgb(252, 252, 252);
+
+  margin: auto;
+  position: relative;
+}
+.wrapper {
+  display: flex;
+}
+
+/*  Side Nav */
+.sidenav {
+  width: 249px;
+  height: 100vh;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  border-right: 1px solid rgb(148, 148, 148);
+}
+
+.logo {
+  height: 100px;
+
+  position: relative;
+
+  border-bottom: 1px solid rgb(148, 148, 148);
+}
+
+.logoImage {
+  height: 30px;
+  width: 162px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  margin-top: -15px;
+  margin-left: -81px;
+}
+
+.sideMenu {
+  margin: 40px 32px 0 32px;
+  padding: 0px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: auto;
+
+  list-style: none;
+}
+
+.sideMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.sideMenuIcon {
+  width: 32px;
+  height: 32px;
+}
+
+.profile {
+  width: 168px;
+  height: 48px;
+  padding: 15px;
+
+  display: flex;
+  position: relative;
+  gap: 6px;
+  margin: auto;
+  margin-bottom: 20px;
+
+  border: 1px solid rgb(178, 178, 178);
+  border-radius: 15px;
+}
+
+.avatar {
+  position: relative;
+  display: flex;
+
+  gap: 8px;
+}
+
+.avatarName {
+  width: 102px;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 2px;
+}
+
+.avatarImage {
+  width: 40px;
+  height: 40px;
+
+  margin: auto;
+
+  border-radius: 20px;
+}
+
+.paginationIcon {
+  transform: rotate(180deg);
+  padding-bottom: 4px;
+}
+
+/*  Dashboard */
+.dashboardWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+
+  padding: 40px;
+  gap: 20px;
+}
+.dashboardHeader {
+  display: flex;
+  flex-direction: row;
+  flex: 0 0 auto;
+  justify-content: space-between;
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  background-color: rgba(7, 119, 106, 1);
+}
+
+/* Links */
+a {
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(34, 34, 34);
+}
+a:hover {
+  color: rgb(96, 96, 96); /* when hovered */
+}
+a:active {
+  color: rgb(50, 50, 50); /* while clicking */
+}
+
+/*  Text */
+p {
+  margin: 0px;
+}
+.bodyText {
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+.bodyTextStrong {
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+.sideMenu {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*  Colors */
+.colorBlack {
+  color: rgb(34, 34, 34);
+}
+.colorGrayTertiary {
+  color: rgb(98, 98, 98);
+}

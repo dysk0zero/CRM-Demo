@@ -1,28 +1,109 @@
 <!DOCTYPE html>
 <html lang="en-US">
-<head>
+  <head>
     <title>CRM Layout - Dashboard</title>
-    <meta charset="utf-8"/>
-    <meta name="description" content="This is the dashboard page. It contains a series of KPIs and a chart."/>
-</head>
-<body>
-    <nav>
-        <ul>
-            <img src="/public/images/logo.svg" role="img" alt="A placeholder typographic logo."/>
-            <li> <a href="/index.html">Dashboard</a> </li>
-            <li> <a href="/contacts/index.html">Contacts</a> </li>
-            <li> <a href="/projects/index.html">Projects</a> </li>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="This is the dashboard page. It contains a series of KPIs and a chart."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <nav class="sidenav">
+        <div class="logo">
+          <img
+            src="./public/images/logo.svg"
+            role="img"
+            alt="A placeholder typographic logo."
+            class="logoImage"
+          />
+        </div>
+
+        <ul class="sideMenu">
+          <li class="sideMenuItem">
+            <img
+              src="./public/images/navIcons/dashboardIcon.svg"
+              role="img"
+              alt="Compass icon."
+              class="sideMenuIcon"
+            />
+            <a href="index.html" class="colorBlack">Dashboard</a>
+          </li>
+          <li class="sideMenuItem">
+            <img
+              src="./public/images/navIcons/contactsIcon.svg"
+              role="img"
+              alt="Contacts icon."
+              class="sideMenuIcon"
+            />
+            <a href="/contacts/index.html" class="colorBlack">Contacts</a>
+          </li>
+          <li class="sideMenuItem">
+            <img
+              src="./public/images/navIcons/projectsIcon.svg"
+              role="img"
+              alt="Projects icon."
+              class="sideMenuIcon"
+            />
+            <a href="/projects/index.html" class="colorBlack">Projects</a>
+          </li>
         </ul>
-        <footer>
-            <div id="wrapper">
-                <img src="/public/images/pfp.png" alt="Placeholder profile picture." width="40px" height="40px" />
-                <div id="wrapper">
-                    <p>John Doe</p>
-                    <p>@johndoe</p>
-                </div>
+        <div class="profile">
+          <div class="avatar">
+            <img
+              src="./public/images/pfp.png"
+              alt="Placeholder profile picture."
+              width="40px"
+              height="40px"
+              class="avatarImage"
+            />
+            <div class="avatarName">
+              <p class="bodyTextStrong">John Doe</p>
+              <p class="colorGrayTertiary bodyText">@johndoe</p>
             </div>
-        </footer>
-    </nav>
-    <body></body>
-</body>
+          </div>
+          <div class="bodyTextStrong">
+            <p class="paginationIcon">...</p>
+          </div>
+        </div>
+      </nav>
+      <main class="dashboardWrapper">
+        <header class="dashboardHeader">
+          <div>
+            <h1 hidden>CRM Dashboard</h1>
+            <h2>Monthly Pipeline Value</h2>
+            <div>
+              <p>€ 241.921,34</p>
+              <p>+14.7%</p>
+            </div>
+          </div>
+          <div>
+            <button>+Add Contact</button>
+            <button>New Project</button>
+          </div>
+        </header>
+        <section id="chart">
+          <div>
+            <h2>Weekly Performance</h2>
+            <!-- Aqui hay que poner el chart de chartjs!!! ojo! -->
+          </div>
+          <div>
+            <p>New Contacts</p>
+            <p>New Projects</p>
+          </div>
+        </section>
+        <section id="kpis">
+          <p>Conversion Rate</p>
+          <p>Leads</p>
+          <p>Open Projects</p>
+          <p>Risk Projects</p>
+          <p>Average Project Value</p>
+          <p>Scheduled Meetings</p>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
