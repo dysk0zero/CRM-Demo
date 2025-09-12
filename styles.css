@@ -330,7 +330,7 @@ body {
 .textHeaderProjects {
   display: flex;
   align-items: flex-start;
-  gap: 4px;
+  gap: 8px;
 }
 .buttonsWrapperHeaderProjects {
   display: flex;
@@ -338,7 +338,96 @@ body {
   align-items: center;
   gap: 16px;
 }
+.mainSectionProjects {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  column-gap: 64px;
+  row-gap: 64px;
+  flex-wrap: wrap;
+}
+.cardProjects {
+  display: flex;
+  width: 260px;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
 
+  border-radius: 20px;
+  border: 1px solid rgba(233, 234, 235, 1);
+  background: rgba(245, 245, 245, 1);
+  box-shadow: 0 0 4px 0 rgba(178, 178, 178, 0.4);
+}
+.headerCardProjects {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  border-bottom: 1px solid rgba(237, 238, 239, 1);
+}
+.taskWrapperProjects {
+  display: flex;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+.taskCardProjects {
+  display: flex;
+  padding: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+
+  border-radius: 10px;
+  border: 1px solid #e2e2e2;
+  background: #fcfcfc;
+  box-shadow: 0 2px 8px 0 #767676;
+}
+.tagsWrapperProjects {
+  margin-top: 8px;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 8px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+.tagsProjects {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  border-radius: 20px;
+  background: rgba(230, 230, 230, 1);
+}
+.lineDivCardProjects {
+  width: 100%;
+  border: none;
+  border-top: 1px solid rgba(237, 238, 239, 1);
+  margin: 0;
+}
+.footerCardWrapperProjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.buttonCardWrapperProjects {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+
+  border-top: 1px solid rgba(237, 238, 239, 1);
+}
 /* Links */
 a {
   color: rgb(34, 34, 34);
@@ -437,6 +526,25 @@ a:active {
 .button4:active {
   background-color: rgb(18, 138, 124);
 }
+.buttonTasks {
+  display: flex;
+  padding: 8px 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  border-radius: 20px;
+  border: none;
+  background: rgba(7, 119, 106, 0.8);
+  box-shadow: 0 0 8px 0 rgba(0, 99, 180, 0.4);
+  color: rgba(252, 252, 252, 1);
+}
+.buttonTasks:hover {
+  box-shadow: 0 0 8px 0 rgba(0, 99, 180, 0.8);
+}
+.buttonTasks:active {
+  background: rgba(7, 119, 106, 0.8);
+}
 /*  Text */
 p {
   margin: 0px;
@@ -459,6 +567,10 @@ p {
   font-size: 14px;
   color: rgb(34, 34, 34);
 }
+.bodyTextXSmall {
+  font-size: 11px;
+  color: rgb(34, 34, 34);
+}
 .sideMenu {
   font-size: 20px;
   text-decoration: none;
@@ -470,6 +582,11 @@ p {
   font-size: 16px;
   padding-bottom: 2px;
 }
+.textTags {
+  font-size: 11px;
+  letter-spacing: -0.44px;
+  color: rgba(90, 90, 90, 1);
+}
 
 /*  Colors */
 .colorBlack {
@@ -477,6 +594,12 @@ p {
 }
 .colorWhite {
   color: rgba(252, 252, 252, 1);
+}
+.colorProjectCardBorder {
+  color: rgba(233, 234, 235, 1);
+}
+.colorProjectCardBackground {
+  color: rgba(245, 245, 245, 1);
 }
 .colorGreen {
   color: rgba(0, 218, 102, 1);
