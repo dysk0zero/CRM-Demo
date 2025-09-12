@@ -45,6 +45,14 @@ body {
 
   height: 100vh;
 }
+.bodyWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+
+  padding: 48px;
+  gap: 32px;
+}
 #popUp {
   display: flex;
   justify-content: center;
@@ -54,11 +62,11 @@ body {
   width: 100%;
 }
 #popUpLink {
-  color: rgb(34, 34, 34);
+  color: rgba(252, 252, 252, 1);
   text-decoration: underline;
 }
 #popUpLink:hover {
-  color: rgba(252, 252, 252, 1);
+  color: rgb(219, 255, 231);
 }
 
 /*  Side Nav */
@@ -163,14 +171,7 @@ body {
 }
 
 /*  Dashboard */
-.dashboardWrapper {
-  display: flex;
-  flex-direction: column;
-  flex: auto;
 
-  padding: 48px;
-  gap: 32px;
-}
 .dashboardKPI {
   display: flex;
   align-items: flex-end;
@@ -276,6 +277,44 @@ body {
   border-top: 1px solid rgba(178, 178, 178, 1);
   width: 200px;
 }
+/* Cards */
+.gridCards {
+  display: grid;
+  height: 226px;
+  row-gap: 20px;
+  column-gap: 20px;
+  align-self: stretch;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  border-radius: 20px;
+}
+.card {
+  display: flex;
+  padding: 20px;
+  align-items: flex-start;
+  gap: 10px;
+  flex: 1 0 0;
+  align-self: stretch;
+
+  border-radius: 20px;
+  border: 1px solid rgb(98, 98, 98);
+}
+.textCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: 1 0 0;
+}
+/* Projects Screen */
+.headerProjects {
+  display: flex;
+  padding: 32px 48px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
 /* Links */
 a {
   color: rgb(34, 34, 34);
@@ -308,6 +347,7 @@ a:active {
   border: 2px solid rgba(44, 44, 44, 0.8);
   background: rgba(44, 44, 44, 0.2);
   color: rgba(252, 252, 252, 1);
+  transition: 5000;
 }
 .button1:active {
   border: 2px solid rgba(44, 44, 44, 0.8);
@@ -330,6 +370,7 @@ a:active {
   border: 2px solid rgba(44, 44, 44, 0.8);
   background: rgba(240, 240, 240, 0.6);
   color: rgb(34, 34, 34);
+  transition: 500;
 }
 .button2:active {
   border: 2px solid rgba(44, 44, 44, 0.8);
@@ -368,6 +409,7 @@ p {
 }
 .KPIchange {
   font-size: 16px;
+  padding-bottom: 2px;
 }
 
 /*  Colors */
@@ -379,6 +421,9 @@ p {
 }
 .colorGreen {
   color: rgba(0, 218, 102, 1);
+}
+.colorRed {
+  color: rgba(222, 4, 0, 1);
 }
 .colorGrayTertiary {
   color: rgb(98, 98, 98);

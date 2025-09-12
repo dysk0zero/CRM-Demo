@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="popUp">
-      <p>
+      <p class="colorWhite">
         This is a demo site for a CRM Layout. Currently in construction. More
         info in
         <a
@@ -90,7 +90,7 @@
           </div>
         </a>
       </nav>
-      <main class="dashboardWrapper">
+      <main class="bodyWrapper">
         <header class="dashboardHeader">
           <div class="dashboardHeaderText">
             <h1 hidden>CRM Dashboard</h1>
@@ -168,13 +168,66 @@
             </div>
           </div>
         </section>
-        <section id="kpis">
-          <p>Conversion Rate</p>
-          <p>Leads</p>
-          <p>Open Projects</p>
-          <p>Risk Projects</p>
-          <p>Average Project Value</p>
-          <p>Scheduled Meetings</p>
+        <section class="gridCards">
+          <div class="card">
+            <div class="textCard">
+              <p class="bodyText">Conversion Rate</p>
+              <div class="dashboardKPI">
+                <p class="KPI">38.7%</p>
+                <p class="KPIchange colorRed">-6.5%</p>
+              </div>
+            </div>
+            <p class="bodyTextSmall">Last 30 days</p>
+          </div>
+          <div class="card">
+            <div class="textCard">
+              <p class="bodyText">Leads</p>
+              <div class="dashboardKPI">
+                <p class="KPI">372</p>
+                <p class="KPIchange colorGreen">+12.4%</p>
+              </div>
+            </div>
+            <p class="bodyTextSmall">Last 30 days</p>
+          </div>
+          <div class="card">
+            <div class="textCard">
+              <p class="bodyText">Open Projects</p>
+              <div class="dashboardKPI">
+                <p class="KPI">43</p>
+                <p class="KPIchange colorGreen">+7.2%</p>
+              </div>
+            </div>
+            <p class="bodyTextSmall">Last 30 days</p>
+          </div>
+          <div class="card">
+            <div class="textCard">
+              <p class="bodyText">Risk Projects</p>
+              <div class="dashboardKPI">
+                <p class="KPI">7</p>
+                <p class="KPIchange colorRed">+33.3%</p>
+              </div>
+            </div>
+            <p class="bodyTextSmall">Last 30 days</p>
+          </div>
+          <div class="card">
+            <div class="textCard">
+              <p class="bodyText">Average Project Value</p>
+              <div class="dashboardKPI">
+                <p class="KPI">€ 7.326,41</p>
+                <p class="KPIchange colorGreen">+2.9%</p>
+              </div>
+            </div>
+            <p class="bodyTextSmall">Last 30 days</p>
+          </div>
+          <div class="card">
+            <div class="textCard">
+              <p class="bodyText">Scheduled Meetings</p>
+              <div class="dashboardKPI">
+                <p class="KPI">17</p>
+              </div>
+            </div>
+            <p class="bodyTextSmall">This week</p>
+          </div>
         </section>
       </main>
     </div>
