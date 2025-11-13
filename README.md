@@ -1,6 +1,5 @@
-# CRM Layout (Vanilla HTML/CSS)
-
-A clean, responsive CRM UI built with plain HTML and CSS. No frameworks. No build step required.
+# CRM Demo
+CRM UI built with plain HTML, CSS and JS.
 
 ## Contents
 
@@ -37,24 +36,18 @@ A clean, responsive CRM UI built with plain HTML and CSS. No frameworks. No buil
 
 ```
 crm-vanilla/
-├─ index.html                 # Dashboard
-├─ contacts.html              # Contacts table
-├─ projects.html              # Projects board/pipeline
-├─ profile.html               # Profile page
-├─ css/
-│  ├─ base.css                # Normalize, resets, typography, variables
-│  ├─ layout.css              # Header, sidebar, grid, responsive shell
-│  ├─ components.css          # Cards, tables, badges, buttons, inputs
-│  ├─ utilities.css           # Spacing, display, flex/grid helpers
-│  └─ themes.css              # Light/Dark tokens and theme hooks
+├─ index.html                 
+├─ contacts.html              
+├─ projects.html              
+├─ profile.html               
+├─ styles.css
+├─ components/   
 ├─ assets/
 │  ├─ logos/
 │  ├─ icons/                  
 │  └─ sample/
 └─ README.md
 ```
-
-You can merge everything into one HTML and one CSS file if you prefer. The split above is for clarity.
 
 ---
 
